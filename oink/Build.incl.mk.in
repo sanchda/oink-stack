@@ -255,6 +255,7 @@ oink.gr.gen.stamp qual.gr.gen.stamp:
 
 C_AND_CC_FLAGS :=
 # C_AND_CC_FLAGS += -D__LINUX__ -D__UNIX__
+C_AND_CC_FLAGS += -std=c++03
 C_AND_CC_FLAGS += @CFLAGS_EXTRA@
 
 C_AND_CC_FLAGS += -Wcast-align

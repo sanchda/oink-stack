@@ -14,7 +14,7 @@ sub get_sm_config_version {
   $main::CC = getEnvOrDefault("CC", "gcc");
   $main::CXX = getEnvOrDefault("CXX", "g++");
 
-  @main::CCFLAGS = ("-g", "-Wall", "-Wno-deprecated", "-D__UNIX__");
+  @main::CCFLAGS = ("-std=c++03", "-g", "-Wall", "-Wno-deprecated", "-D__UNIX__");
   # Don't do this!  The -Werror flag is a great idea for development,
   # which is why in smbase/configure.pl scott turns it on if you use
   # the 'devel' flag, but to have it on by default just maximizes the
